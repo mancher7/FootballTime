@@ -1,11 +1,11 @@
 {
-    "name": "FootballTime",
-    "short_name": "FootballTime",
+    "name": "Football Time 2.0",
+    "short_name": "Football Time 2.0",
     "start_url": "index.html",
     "display": "fullscreen",
-    "background_color": "#FFFFFF",
+    "background_color": "#231F20",
     "theme_color": "#000",
-    "description": "Football Time",
+    "description": "",
     "icons": [{
       "src": "TemplateData/icons/unity-logo-dark.png",
       "sizes": "144x144",

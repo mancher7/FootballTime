@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | FootballTime</title>
+    <title>Unity WebGL Player | Football Time 2.0</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div id="unity-container">
-      <canvas id="unity-canvas" width=1980 height=1020 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/FootballTime24.loader.js";
+      var loaderUrl = buildUrl + "/FootballTime.loader.js";
       var config = {
-        dataUrl: buildUrl + "/FootballTime24.data.unityweb",
-        frameworkUrl: buildUrl + "/FootballTime24.framework.js.unityweb",
-        codeUrl: buildUrl + "/FootballTime24.wasm.unityweb",
+        dataUrl: buildUrl + "/FootballTime.data.gz",
+        frameworkUrl: buildUrl + "/FootballTime.framework.js.gz",
+        codeUrl: buildUrl + "/FootballTime.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "TFLStudio",
-        productName: "FootballTime",
-        productVersion: "1.0",
+        companyName: "DefaultCompany",
+        productName: "Football Time 2.0",
+        productVersion: "0.1",
         showBanner: unityShowBanner,
       };
 
@@ -84,7 +84,6 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
-      canvas.style.background = "url('" + buildUrl + "/FootballTime24.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
